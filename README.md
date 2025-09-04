@@ -70,4 +70,4 @@ MIT Licensed - Open for both personal and commercial use
 ---
 
 **Developed by Hazrat Ali**  
-[[GitHub Follow](https://github.com/Hazrat-Ali9)]()
+[[GitHub Follow](https://github.com/Hazrat-Ali9)]

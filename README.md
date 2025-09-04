@@ -63,11 +63,11 @@ A dynamic web application for creating, voting, and visualizing live polls with 
 - Local storage for session management
 - Lightweight architecture (<50KB total assets)
 
-## 📄 License
+## 📄 [MIT License](LICENSE)
 
-MIT Licensed - Open for both personal and commercial use
 
----
+MIT Licensed - Open for both personal and commercial Use
 
 **Developed by Hazrat Ali**  
+
 [[GitHub Follow](https://github.com/Hazrat-Ali9)]

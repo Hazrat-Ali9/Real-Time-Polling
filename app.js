@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // DOM Elements
+    // Dom Elements
     const pollContainer = document.getElementById('pollContainer');
     const pollQuestion = document.getElementById('pollQuestion');
     const totalVotes = document.getElementById('totalVotes');

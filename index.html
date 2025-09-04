@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time-Polling</title>
+    <link rel="shortcut icon" href="https://user-images.githubusercontent.com/37160523/165100232-b1a4dcf0-2f98-4f71-abe7-1fd8f497ed1b.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Live polling container -->
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-poll"></i> Live Poll</h1>
+            <p class="subtitle">Vote and see results in real-time</p>
+        </header>
+
+        <div class="poll-container" id="pollContainer">
+            <div class="poll-question">
+                <h2 id="pollQuestion">Loading question...</h2>
+                <div class="poll-meta">
+                    <span id="totalVotes">0 votes</span>
+                    <span id="pollStatus" class="status-active"><i class="fas fa-circle"></i> Live</span>
+                </div>
+            </div>
+
+            <div class="poll-options" id="pollOptions">
+                <!-- Options will be loaded here -->
+                <div class="loading-options">
+                    <div class="loading-bar"></div>
+                    <div class="loading-bar"></div>
+                    <div class="loading-bar"></div>
+                </div>
+            </div>
+
+            <div class="poll-footer">
+                <button id="shareBtn" class="btn btn-share"><i class="fas fa-share-alt"></i> Share</button>
+                <div class="timer" id="pollTimer">
+                    <i class="fas fa-clock"></i> <span id="timeRemaining">--:--</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-container" id="resultsContainer">
+            <h3>Results</h3>
+            <div class="results-chart" id="resultsChart">
+                <!-- Chart will be rendered here -->
+            </div>
+            <div class="results-table" id="resultsTable">
+                <!-- Table will be rendered here -->
+            </div>
+        </div>
+    </div>
+
+        <!-- Share Modal -->
+    <div class="modal" id="shareModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Share This Poll</h3>
+            <div class="share-options">
+                <input type="text" id="pollLink" readonly>
+                <button id="copyLinkBtn" class="btn btn-primary">Copy Link</button>
+            </div>
+            <div class="social-share">
+                <button class="social-btn facebook"><i class="fab fa-facebook-f"></i></button>
+                <button class="social-btn twitter"><i class="fab fa-twitter"></i></button>
+                <button class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></button>
+                <button class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
